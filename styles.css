@@ -1,0 +1,131 @@
+:root {
+    --green: #4d895f;
+}
+
+/* --------------------- 
+   CORE STYLES
+--------------------- */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: rgba(227, 227, 227, 1);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(227, 227, 227, 1)), color-stop(50%, rgba(219, 219, 219, 1)), color-stop(51%, rgba(209, 209, 209, 1)), color-stop(100%, rgba(255, 255, 255, 1)));
+    background: -webkit-gradient(linear, left top, right top, from(rgba(227, 227, 227, 1)), color-stop(50%, rgba(219, 219, 219, 1)), color-stop(51%, rgba(209, 209, 209, 1)), to(rgba(255, 255, 255, 1)));
+    background: linear-gradient(to right, rgba(227, 227, 227, 1) 0%, rgba(219, 219, 219, 1) 50%, rgba(209, 209, 209, 1) 51%, rgba(255, 255, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3e3e3', endColorstr='#ffffff', GradientType=1);
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+.container {
+    border: 20px solid var(--green);
+    border-radius: 50px;
+    -webkit-box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.75);
+    margin-right: 100px;
+    margin-left: 100px;
+    padding: 10px;
+    background: #d2c3a4;
+}
+
+/* --------------------- 
+   CONTENTS
+--------------------- */
+
+h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+}
+
+h3:hover {
+    color: var(--green);
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.description {
+    text-align: justify;
+}
+
+ul {
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+}
+
+
+.item-header {
+    font-weight: 700;
+}
+
+.item-header:hover {
+    color: var(--green);
+    cursor: pointer;
+}
+
+
+
+.interesting-fact {
+    text-align: justify;
+}
+
+/* --------------------- 
+   MEDIA QUERIES
+--------------------- */
+
+@media only screen and (max-width: 500px) {
+    body {
+        font-size: 0.8rem;
+    }
+
+    ul,
+    .interesting-fact,
+    .description {
+        text-align: center;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 575px) {
+    ul,
+    .interesting-fact,
+    .description {
+        text-align: center;
+    }
+
+    body {
+        letter-spacing: 0;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 700px) {
+
+    ul {
+        text-align: center;
+    }
+
+    .interesting-fact,
+    .description {
+        text-align: justify;
+    }
+
+    body {
+        letter-spacing: 0;
+    }
+
+}
